@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Regular");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(217, 54%, 11%);
+  font-family: "Outfit";
+}
+
+hr {
+  color: hsl(215, 32%, 27%);
+  margin: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.card {
+  background: hsl(216, 50%, 16%);
+  height: 45rem;
+  width: 22rem;
+  border-radius: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.card h1 {
+  color: hsl(0, 0%, 100%);
+  padding-left: 1.6rem;
+}
+.card .title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.card p {
+  font-size: 18px;
+  padding: 1.6rem;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.9rem;
+}
+
+.card-img {
+  width: 20rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-img:hover {
+  position: relative;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-img:hover::before {
+  content: "";
+  background-image: url(../images/icon-view.svg);
+  background-color: hsl(178, 100%, 50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  border-radius: 1rem;
+}
+
+.eth-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+}
+
+.price img {
+  width: 38px;
+  height: 20px;
+  padding: 0;
+  padding-left: 1.6rem;
+}
+.price h1 {
+  padding: 0;
+  padding-left: 0.5rem;
+  font-size: 18px;
+  color: hsl(178, 100%, 50%);
+  font-weight: 500;
+}
+
+.days {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 7.8rem;
+}
+
+.days img {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+}
+.days h1 {
+  padding: 0;
+  font-size: 18px;
+  padding-right: 1.6rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 500;
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 1.6rem;
+}
+
+.credits img {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.credits h1 {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: medium;
+  padding: 0;
+  padding-left: 0.4rem;
+}
+.credits a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.credits h2 a:hover {
+  color: hsl(178, 100%, 50%);
+}
+.credits h2 {
+  padding: 0;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  font-size: medium;
+}
+
+.created-by {
+  margin: 1rem;
+  text-align: center;
+  color: hsl(215, 51%, 70%);
+  font-size: 0.8rem;
+}
+.created-by a {
+  text-decoration: none;
+  color: hsl(178, 100%, 50%);
+}
+
+/*# sourceMappingURL=output.css.map */
